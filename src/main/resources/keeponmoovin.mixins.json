@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.penguinencounter.keeponmoovin.client.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "Ono",
+    "Ono2"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

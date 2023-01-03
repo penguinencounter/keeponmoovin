@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "keeponmoovin",
+  "version": "${version}",
+  "name": "keeponmoovin",
+  "description": "Packet issues? I certainly don't care.",
+  "authors": [
+    "penguinencounter"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/keeponmoovin/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.penguinencounter.keeponmoovin.client.KeeponmoovinClient"
+    ]
+  },
+  "mixins": [
+    "keeponmoovin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
