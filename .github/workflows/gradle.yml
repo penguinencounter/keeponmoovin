@@ -38,5 +38,5 @@ jobs:
         arguments: build
     - name: Tree
       run: |
-        ls -r .
+        ls -R .
         echo Done.
