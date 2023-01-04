@@ -36,8 +36,13 @@ jobs:
       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
       with:
         arguments: build
-    - name: Tree
+    - name: Copy build results
       run: |
         mkdir exports
         ls -R build/libs
         cp build/libs/keeponmoovin-[0-9.-]*.jar exports/ 
+    - name: Send artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: development-build
+        path: exports/
