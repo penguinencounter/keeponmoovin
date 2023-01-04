@@ -38,5 +38,5 @@ jobs:
         arguments: build
     - name: Tree
       run: |
-        ls -R .
-        echo Done.
+        mkdir exports
+        cp /build/libs/keeponmoovin-[0-9.-]*.jar exports/ 
